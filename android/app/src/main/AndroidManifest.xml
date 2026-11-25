@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <queries>
+        <package android:name="com.chillyroom.zhmr.gp" />
+        <package android:name="com.chillyroom.otherworld" />
+        <package android:name="com.chillyroom.zhmr.mi" />
+        <package android:name="com.chillyroom.zhmr.huawei" />
+        <package android:name="com.chillyroom.zhmr.honor" />
+        <package android:name="com.chillyroom.zhmr.vivo" />
+        <package android:name="com.chillyroom.zhmr.bilibili" />
+        <package android:name="com.chillyroom.zhmr.m4399" />
+        <package android:name="com.chillyroom.zhmr.hykb" />
+        <package android:name="com.tencent.tmgp.zhmr" />
+    </queries>
+
+    <application
+        android:name=".OwlEditorApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OWLEditor">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CrashActivity"
+            android:exported="false"
+            android:process=":crash" />
+    </application>
+</manifest>

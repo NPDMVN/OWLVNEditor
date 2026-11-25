@@ -1,0 +1,46 @@
+# Gradle & Android build outputs
+.gradle/
+.kotlin/
+android/.gradle/
+android/.kotlin/
+android/local.properties
+local.properties
+.idea/
+*.iml
+build/
+android/build/
+android/app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Rust build artifacts
+rust/target/
+
+# Signing keys & secrets
+*.keystore
+*.jks
+*.pem
+*.p12
+*.env
+
+# Compiled outputs, videos, backups & reference game dumps (never commit!)
+output/
+tools/
+com.chillyroom.zhmr.gp/
+com.chillyroom.zhmr.gp_il2cpp_dump/
+*.apk
+*.aab
+*.owldb
+*.skdb
+*.zip
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.wav
+*.mp3
+
+# OS junk
+.DS_Store
+Thumbs.db

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "id": "chillyroom.otherworld_legends",
+  "displayName": "Otherworld Legends (Chiến Hồn Minh Giới)",
+  "developer": "ChillyRoom",
+  "engine": "unity_hybridclr",
+  "packages": [
+    "com.chillyroom.zhmr.gp",
+    "com.chillyroom.otherworld",
+    "com.chillyroom.zhmr.mi",
+    "com.chillyroom.zhmr.huawei",
+    "com.chillyroom.zhmr.honor",
+    "com.chillyroom.zhmr.vivo",
+    "com.chillyroom.zhmr.nearme.gamecenter",
+    "com.chillyroom.zhmr.bilibili",
+    "com.chillyroom.zhmr.m4399",
+    "com.chillyroom.zhmr.hykb",
+    "com.chillyroom.zhmr.aligames",
+    "com.chillyroom.zhmr.bytedance.gamecenter",
+    "com.chillyroom.zhmr.lenovo",
+    "com.chillyroom.zhmr.nubia",
+    "com.chillyroom.zhmr.mz",
+    "com.chillyroom.zhmr.hlx",
+    "com.chillyroom.zhmr.yw",
+    "com.chillyroom.zhmr.jinli",
+    "com.chillyroom.zhmr.coolpad",
+    "com.chillyroom.zhmr.byd",
+    "com.chillyroom.zhmr.rustore",
+    "com.tencent.tmgp.zhmr"
+  ],
+  "paths": {
+    "filesDir": "files",
+    "sharedPrefs": "shared_prefs/{package}.v2.playerprefs.xml"
+  },
+  "crypto": {
+    "type": "owl_cryptoprefs_aes256_cbc_zero",
+    "keyUtf8": "HTdkQTNmTMD1NTM4DNM0QNIhNTEeNwA3",
+    "keyHex": "4854646b51544e6d544d44314e544d34444e4d30514e49684e5445654e774133",
+    "ivHex": "eb26727c389f6bf3e9789dbca98e2069",
+    "keyHash": "md5_hex_lower",
+    "containerFormat": "ms_nrbf_base64"
+  },
+  "sanitizer": {
+    "playerPrefsRemovePatterns": [
+      "^SdkStateCache.*$",
+      "^UsedAccounts.*$",
+      "^emptyLocalCloudSaveId$",
+      "^LastLoginUid$",
+      "^FrequentCheckCache_LoginTag$",
+      "^runtimeEmailArchive$",
+      "^unity\\.cloud_userid$",
+      "^unity\\.player_session.*$",
+      "^cloudSaveId$"
+    ]
+  },
+  "features": {
+    "accountClear": true,
+    "ssaidSpoof": true,
+    "forceStopBeforeWrite": true,
+    "antiTamperXorSync": true,
+    "nrbfBinaryFormatter": true
+  }
+}
